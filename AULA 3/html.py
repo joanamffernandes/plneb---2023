@@ -33,8 +33,8 @@ header = '''<html>
 
 body = ''
 for designation, description in new_entries:
-    body += '<b>' + designation + '</b>'
-    body += '<p>' + description + '</p>' + '<hr>'
+    body += ' <tr><td>' + designation + '</b>'
+    body += '<p>' + description + ' ' + ' '
 
 footer = ''' </body>
 </html>'''
