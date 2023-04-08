@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+{% block body%}
+    <html>
+        <head>
+            <title>menu</title>
+
+            <style>
+                .btn {
+                  background-color: #1e3932;
+                  border: none;
+                  color: #dff9ba;
+                  padding: 12px 24px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 10px;
+                  border-radius: 8px;
+                  transition-duration: 0.4s;
+                  font-family: Verdana;
+                }
+
+                .btn:hover {
+                    background-color: #dff9ba;
+                    color: #1e3932;
+                }
+            </style>
+          
+
+        </head>
+        <br> <br> <br> <br> 
+        <body style="text-align:center; background-color: #9eb689">
+            <h1 style="color: #1e3932; font-family: Verdana;" >ESCOLHE UMA OPÇÃO</h1>
+            <p><a href="/elefante"><button class="btn">ELEFANTE</button></a></p>
+            <p><a href="/engenharia"><button class="btn">ENGENHARIA</button></a></p>
+            <p><a href="/egua"><button class="btn">ÉGUA</button></a></p>
+        </body>
+    </html>
+{% endblock %}

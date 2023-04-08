@@ -1,0 +1,89 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+
+		header {
+			background-color: #dff9ba;
+			padding: 5px;
+			text-align: center;
+		}
+
+
+		h1 {
+			color: #333;
+			font-size: 20px;
+			margin: 0;
+		}
+
+		
+		nav {
+			background-color: #006241;
+			overflow: hidden;
+		}
+
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		nav li {
+			float: left;
+		}
+
+		nav li a {
+			display: block;
+			color: #dff9ba;
+			text-align: center;
+			padding: 8px 10px;
+			text-decoration: none;
+            font-family: Verdana;
+		}
+
+		nav li a:hover {
+			background-color: #1e3932;
+		}
+
+
+        footer {
+            background-color: #dff9ba;
+            color: #1e3932;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: Verdana;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+	</style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #1e3932; font-family: Verdana;">PROCESSAMENTO DE LINGUAGEM NATURAL</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Menu</a></li>
+            <li><a href="/elefante">Elefante</a></li>
+            <li><a href="/engenharia">Engenharia</a></li>
+            <li><a href="/egua">Égua</a></li>
+          </ul>
+    </nav>
+    
+    {% block body %}
+    {% endblock %}
+
+    <footer>
+        <p>PLN | Engenharia Biomédica | 2023</p>
+    </footer>
+
+</body>
+</html>
