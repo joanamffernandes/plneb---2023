@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<br> <br> 
+<div class="card" style="width: 18rem; margin: 0 auto;">
+    <div class="card-body">
+        <h5 class="card-title">Designation: {{designation}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Description: {{value["des"]}}</h6>
+        <p class="card-text">EN: {{value["en"]}}</p>
+</div>
+
+{% endblock %}
